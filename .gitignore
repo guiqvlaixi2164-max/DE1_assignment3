@@ -1,0 +1,32 @@
+# 忽略 Python 编译产生的字节码文件
+__pycache__/
+*.pyc
+
+# 忽略敏感的环境变量文件
+# .env 和 .env.local 存放真实的密钥和配置
+.env
+.env.local
+.envrc
+
+# 忽略虚拟环境文件夹（通常名为 venv 或 .venv）
+venv/
+.venv/
+de_env/
+
+# 忽略 Jupyter Notebook 检查点
+.ipynb_checkpoints/
+
+# 忽略下载的数据文件或大型文件
+data/
+
+# 忽略敏感凭证文件夹
+secrets/
+
+# 忽略 SQLite 数据库文件（如果使用）
+*.sqlite3
+
+# 忽略 macOS 系统文件
+.DS_Store
+
+# 忽略其他操作系统和工具生成的临时文件
+*~
