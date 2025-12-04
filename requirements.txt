@@ -1,17 +1,17 @@
-# AWS SDK - 核心依赖，用于与 S3, Bedrock, Translate 等服务交互
+# AWS SDK
 boto3>=1.26
 
-# 用于发起 HTTP 请求，例如获取网页内容
+# scrapping webpages
 requests>=2.28
 
-# 用于网页内容解析
+# Used for parsing web page content
 beautifulsoup4>=4.12
 
-# 用于从网页中提取可读文本
+# Used to extract readable text from web pages
 readability-lxml>=0.8.1
 
-# 用于读取 .env 文件的库 (虽然推荐 aws configure，但有时仍需它读取 S3 Bucket 名等配置)
+# This library is used to read .env files (although AWS configure is recommended, it is sometimes still needed to read configurations such as S3 Bucket names).
 python-dotenv>=1.0.0
 
-# 用于运行测试
+# Used to run tests
 pytest>=7.0
