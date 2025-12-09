@@ -26,7 +26,6 @@ DE1_assignment3/
 ├─ .env.sample               
 ├─ notebooks/
 │  ├─ de1assignment3.ipynb
-│  ├─ de1assignment3_modified.ipynb
 │  └─ interpret_results.ipynb
 ├─ analysis_plots/
 │  ├─ mixed_boxplot.png
