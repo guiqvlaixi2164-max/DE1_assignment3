@@ -8,13 +8,13 @@ Using the boto3 library to leverage the capabilities of AWS S3, Bedrock, Transla
 1. Create S3 bucket: `ceu-jiaqi-2025 `
 2. Configure AWS: `aws configure`
 3. Create virtualenv and install: `python -m venv de_env && source de_env/bin/activate && pip install -r requirements.txt`
-4. Run jupyter notebook de1assignment3_modified.ipynb
+4. Run jupyter notebook de1assignment3.ipynb
 5. Results saved to `s3://ceu-jiaqi-2025/results/`
 6. Run jupyter notebook interpret_results.ipynb
 7. Results saved to results_summary.csv and analysis_plots/
 
 ## Files
-- notebooks/: Jupyter notebooks for the whole pipeline including 
+- notebooks/: Jupyter notebooks for the whole pipeline 
 - analysis_plots/: the result visualizations of the results of sentiments of webpages
 
 ## Structure
