@@ -138,19 +138,19 @@ Here we present 3 plots to show what we found in this assignment.
 
 - **a.Column Chart: Sentiment scores of English, Italian and Chinese**
 
-![Sentiment scores of English, Italian and Chinese](../analysis_plots/avg_scores_by_lang.png)
+![Sentiment scores of English, Italian and Chinese](analysis_plots/avg_scores_by_lang.png)
 
 In this column chart, we can see that in general, Italian has the lowest neutral score but the highest mixed score. Chinese is the most negative about this topic, and English is the most positive.
 
 - **b.Scatter Chart: Mixed vs. Negative Sentiment Scores by Language**
 
-![Mixed vs. Negative Sentiment Scores by Language](../analysis_plots/Mixed_Negative_sentiment.png)
+![Mixed vs. Negative Sentiment Scores by Language](analysis_plots/Mixed_Negative_sentiment.png)
 
 In this scatter chart, we can see that Italian tends to be more mixed and less negative. On the other hand, Chinese and English tend to be more negative and less mixed.
 
 - **c.Box Plot: Distribution of Neutral Sentiment Scores by Language**
 
-![Distribution of Neutral Sentiment Scores by Language](../analysis_plots/neutral_boxplot.png)
+![Distribution of Neutral Sentiment Scores by Language](analysis_plots/neutral_boxplot.png)
 
 In this box plot, we can see that the median neutral score does not vary too much in three languages but tends to be a bit higher in Chinese and English. However, the overall distribution of neutral score is obviously lower in Italian.
 
