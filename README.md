@@ -202,7 +202,7 @@ We assume that after translation, Chinese chars expands 1.5 times.
 
 (30,000*1.5 + 270,000 + 315,000)/100 * $0.0001 = $0.63
 
-- d.Amazon S3
+- Amazon S3
 
 The cost of S3 could be ignored since the amount of data is only hundreds kilobyte.
 
