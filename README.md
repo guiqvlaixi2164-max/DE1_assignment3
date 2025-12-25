@@ -122,33 +122,33 @@ To realize the research goal, we use 4 different AWS Serverless services in Pyth
 
 Here is the process how we worked with those pages:
 
-a. Web scraping: using the ‘request’ library for HTTP requests;
+- Web scraping: using the ‘request’ library for HTTP requests;
 
-b. Info cleaning: using Amazon Bedrock to clean and summarize the text scraped from pages；
+- Info cleaning: using Amazon Bedrock to clean and summarize the text scraped from pages；
 
-c. Translating: using Amazon Translate to translate all pages into English to ensure an unified baseline for the next step;
+- Translating: using Amazon Translate to translate all pages into English to ensure an unified baseline for the next step;
 
-d. Sentiments analysis: using Amazon Comprehend to detect emotional tendencies of those articles and give a comprehensive score;
+- Sentiments analysis: using Amazon Comprehend to detect emotional tendencies of those articles and give a comprehensive score;
 
-e. Storage: using Amazon S3 to store the results of the processes above.
+- Storage: using Amazon S3 to store the results of the processes above.
 
 ### 4. Findings
 
 Here we present 3 plots to show what we found in this assignment.
 
-- **a.Column Chart: Sentiment scores of English, Italian and Chinese**
+- **Column Chart: Sentiment scores of English, Italian and Chinese**
 
 ![Sentiment scores of English, Italian and Chinese](analysis_plots/avg_scores_by_lang.png)
 
 In this column chart, we can see that in general, Italian has the lowest neutral score but the highest mixed score. Chinese is the most negative about this topic, and English is the most positive.
 
-- **b.Scatter Chart: Mixed vs. Negative Sentiment Scores by Language**
+- **Scatter Chart: Mixed vs. Negative Sentiment Scores by Language**
 
 ![Mixed vs. Negative Sentiment Scores by Language](analysis_plots/Mixed_Negative_sentiment.png)
 
 In this scatter chart, we can see that Italian tends to be more mixed and less negative. On the other hand, Chinese and English tend to be more negative and less mixed.
 
-- **c.Box Plot: Distribution of Neutral Sentiment Scores by Language**
+- **Box Plot: Distribution of Neutral Sentiment Scores by Language**
 
 ![Distribution of Neutral Sentiment Scores by Language](analysis_plots/neutral_boxplot.png)
 
@@ -178,7 +178,7 @@ Italian pages: 10 pages * (1500 words * 7characters) * 3 rounds = 315,000 chars.
 
 Then we can estimate the cost in each AWS service:
 
-- a. Amazon Bedrock (Model: Mistral 7B Instruct):
+- Amazon Bedrock (Model: Mistral 7B Instruct):
 
 30,000 Chinese chars ≈ 45k tokens;
 
@@ -190,13 +190,13 @@ Here we assume that inputs and outputs are equal in data amount.
 
 Total cost = Input + Output = (45+60+60)*$0.00015 + (45+60+60)*$0.0002 ≈ $0.06
 
-- b. Amazon Translate
+- Amazon Translate
 
 We only translate Chinese and Italian into English.
 
 (30,000 + 315,000)/1,000,000 * $15 = $5.175
 
-- c.Amazon Comprehend
+- Amazon Comprehend
 
 We assume that after translation, Chinese chars expands 1.5 times.
 
